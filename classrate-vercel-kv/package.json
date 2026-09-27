@@ -3,5 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "School-only peer rating app — Vercel KV edition. Zero dependencies: static frontend + Vercel functions; database attaches with one click inside Vercel."
+  "description": "School-only peer rating app — Vercel KV edition. Zero dependencies: static frontend + Vercel functions; database attaches with one click inside Vercel.",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
 }
