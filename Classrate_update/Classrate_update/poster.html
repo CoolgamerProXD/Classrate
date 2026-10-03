@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClassRate — Poster 🖨️</title>
+<!--
+  Printable A4 poster with a pre-baked QR code (qr.png) for https://classrate.vercel.app
+  If your URL ever changes, ask for a re-baked QR.
+  Print tips: A4 portrait, best in colour, 100% scale.
+-->
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: #efeef8; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: #1c1e2c; padding: 20px;
+  }
+  .sheet {
+    width: min(720px, 100%); background: #fff; border-radius: 28px; padding: 48px 44px;
+    text-align: center; box-shadow: 0 24px 60px rgba(35,30,90,.18);
+    border: 6px solid #6c5ce7;
+  }
+  .brand { font-size: 64px; font-weight: 900; letter-spacing: 1px;
+    background: linear-gradient(135deg,#6c5ce7,#a55eea 60%,#e05fa8);
+    -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { font-size: 24px; font-weight: 800; margin-top: 6px; }
+  .tag { color:#6d7186; font-size: 16px; margin-top: 8px; }
+  .qrwrap { margin: 30px auto 0; display: inline-block; padding: 18px; border-radius: 24px;
+    background: #fff; border: 3px dashed #6c5ce7; }
+  .qrwrap img { display: block; width: 300px; height: 300px; image-rendering: pixelated; }
+  .scan { font-size: 20px; font-weight: 800; margin-top: 18px; }
+  .url { display: inline-block; margin-top: 12px; font-size: 26px; font-weight: 900;
+    color: #6c5ce7; letter-spacing: .5px; }
+  .foot { margin-top: 26px; display: flex; justify-content: center; gap: 18px; flex-wrap: wrap;
+    color: #6d7186; font-size: 14px; font-weight: 700; }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .sheet { box-shadow: none; width: 100%; border-radius: 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="brand">⭐ CLASSRATE</div>
+    <div class="sub">Who's the fastest? The strongest? The funniest duo-maker?</div>
+    <div class="tag">Positive, anonymous ratings — school accounts only.</div>
+    <div class="qrwrap"><img src="qr.png" alt="QR code for classrate.vercel.app"></div>
+    <div class="scan">📱 Scan me to join &amp; rate your classmates</div>
+    <div><span class="url">classrate.vercel.app</span></div>
+    <div class="foot"><span>🛡️ @eq.edu.au only</span><span>🙈 votes stay anonymous</span><span>🏆 weekly + all-time boards</span></div>
+  </div>
+</body>
+</html>
